@@ -18,77 +18,90 @@
             font-weight: bold;
             color: #040815;
             margin: 0;
+            padding-left: 28px;
+            padding-right: 28px;
         }
 
         h2 {
             font-size: 18px;
             font-weight: 600;
+            color: #040815;
             margin: 0;
+            padding-left: 28px;
+            padding-right: 28px;
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: 400;
+            color: #040815;
+            margin: 0;
+            padding-left: 28px;
+            padding-right: 28px;
         }
 
         p.content {
             color: #596780;
             font-size: 14px;
             margin: 0;
+            padding-left: 28px;
+            padding-right: 28px;
         }
 
-        .carousel-item {
-            width: 300px;
+        div.scroll-container {
+            margin: 0;
+            overflow: auto;
+            white-space: nowrap;
+        }
+
+        div.scroll-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        div.scroll-container {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        div.scroll-container img {
+            width: 60%;
             aspect-ratio: 1080 / 2340;
-            /* Automatically calculates height */
+            margin-right: 16px;
         }
 
-        .carousel-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        #footer {
+            color: #040815;
+            font-size: 12px;
+            margin: 0;
+            padding-left: 28px;
+            padding-right: 28px;
         }
     </style>
 </head>
 
 <body style="background-color: #e3e3e3; margin: 0;">
     <div
-        style="max-width: 500px; min-height: 100vh; background-color: #FFFFFF; margin: 0 auto; padding-top: 32px; padding-bottom: 32px; padding-left: 28px; padding-right: 28px;">
+        style="max-width: 500px; min-height: 100vh; background-color: #FFFFFF; margin: 0 auto; padding-top: 32px; padding-bottom: 32px;">
         <h1>Gentle Woolworks</h1>
         <h2 style="margin-top: 32px;">About</h2>
         <p class="content" style="margin-top: 12px;">Gentle Woolworks is a creative team of young artists based in
             Hanoi, Vietnam, dedicated to crafting thoughtful and practical mobile applications.</p>
-        <h2 style="margin-top: 32px;">Budget Buddy</h2>
+        <h2 style="margin-top: 32px;">Our work</h2>
+        <h3 style="margin-top: 32px;">Budget Buddy</h3>
+        <p class="content" style="margin-top: 12px;">
+            Expense tracking and budgets
+        </p>
 
-        <!-- Carousel -->
-        <div id="demo" class="carousel slide" data-bs-ride="carousel" style="margin-top: 12px;">
-
-            <!-- Indicators/dots -->
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-            </div>
-
-            <!-- The slideshow/carousel -->
-            <div class="carousel-inner" style="margin: 0 auto;">
-                <div class="carousel-item active">
-                    <img src="budget-buddy/home.jpg" alt="Los Angeles" class="d-block" style="width:100%">
-                </div>
-                <div class="carousel-item">
-                    <img src="budget-buddy/report.jpg" alt="Chicago" class="d-block" style="width:100%">
-                </div>
-                <div class="carousel-item">
-                    <img src="budget-buddy/budgets.jpg" alt="Chicago" class="d-block" style="width:100%">
-                </div>
-                <div class="carousel-item">
-                    <img src="budget-buddy/settings.jpg" alt="Chicago" class="d-block" style="width:100%">
-                </div>
-            </div>
-
-            <!-- Left and right controls/icons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
+        <div class="scroll-container" style="margin-top: 12px; padding-left: 28px; padding-right: 28px;">
+            <img src="budget-buddy/home.jpg" alt="Cinque Terre">
+            <img src="budget-buddy/report.jpg" alt="Forest">
+            <img src="budget-buddy/report.jpg" alt="Northern Lights">
+            <img src="budget-buddy/settings.jpg" alt="Mountains">
         </div>
+
+        <div style="flex-grow: 1;"></div>
+
+        <div id="footer" style="margin-top: 32px;">© 2025 Gentle Woolworks</div>
 
     </div>
 </body>
